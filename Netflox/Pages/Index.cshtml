@@ -1,0 +1,316 @@
+﻿@page
+@using Netflox.Models;
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap>"
+          rel=" stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="~/favicon.ico" />
+    <title>Netflox</title>
+</head>
+
+<body>
+    <header>
+        <!--Navbar avec un logo a gauche et deux boutons sur la droites-->
+        <nav>
+            <img src="./img/logo.webp" class="logo Netflox" />
+            <!--container pour les deux boutons-->
+            <div class="nav_button">
+                <button class="button_language">
+                    <img src="./img/langue-White.png" class="language-logo" />Français<img src="./img/la-fleche.png"
+                                                                                            class="arrow-down_img" />
+                </button>
+                <!--lien qui entoure le bouton pour pouvoir aller sur la page s'identifier-->
+                <a asp-page="/Account/Login" asp-area="Identity" class="button_login">S'identifier</a>
+            </div>
+        </nav>
+        <!--Partie main du header avec un input pour récupérer l'email de la personne et aller vers l'inscription-->
+        <div class="header_main">
+            <h1>Films, séries et bien plus en <br />illimité.</h1>
+            <h2>Où que vous soyez. Annulez à tout moment.</h2>
+            <h3>
+                Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous
+                abonner ou réactiver votre abonnement
+            </h3>
+            <div class="header_email-information">
+                <a asp-page="/step" class="header_start">Commencer</a>
+            </div>
+        </div>
+    </header>
+    <hr />
+    <main>
+        <!--Section 1-->
+        <!--Utilisation de la même structure pour les sections de 1 à 4 (deux parties de 50% de width)-->
+        <section>
+            <!--Section Left-->
+            <div class="section_left">
+                <!-- Section avec un titre et du texte-->
+                <div class="section_text">
+                    <h1>Regardez Netflix sur votre TV.</h1>
+                    <p>
+                        Regardez Netflix sur votre Smart TV, Playstation, Xbox Chromecast,
+                        Apple TV, lecteur Blu-Ray et bien plus
+                    </p>
+                </div>
+            </div>
+            <!--Section Right-->
+            <div class="section_right">
+                <!--Section avec une animation, image avec une video dedans (démonstration de Netflix) utilisation d'un container pour pouvoir mettre l'image en positio>
+                        relative et le container de la video en absolute-->
+                <div class="animation_netflox_tv">
+                    <div class="animation_video_tv">
+                        <video alt="Démonstration du menu Netflox" autoplay="" playsinline="" muted="" loop="">
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                                    type=video/mp4 />
+                        </video>
+                    </div>
+                    <img alt="télévision" src="img/tv.png" />
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!--Section 2-->
+        <section>
+            <!--Section Left-->
+            <div class="section_left">
+                <!--Section avec une image en arrière plan et une animation qui vient par dessus avec 3 éléments-->
+                <div class="animation_loader">
+                    <img class="picture-iphone" alt="Téléphone avec Stranger Things" src="img/picture-section-2-bis.jpg" />
+                    <div class="animation-iphone">
+                        <img class="main-picture-animation" alt="poster stranger things" src="img/boxshot.png" />
+                        <div class="animation-text">
+                            <p class="animation-text1">Stranger Things</p>
+                            <p class="animation-text2">téléchargement en cours...</p>
+                        </div>
+                        <img class="animation-loader" alt="animation chargement" src="img/download-icon.gif" />
+                    </div>
+                </div>
+            </div>
+            <!--Section Right-->
+            <div class="section_right">
+                <!-- Section avec un titre et du texte-->
+                <div class="section_text">
+                    <h1>
+                        Téléchargez vos séries préférées pour les regarder hors connexion
+                    </h1>
+                    <p>
+                        Enregistrez vos programmes préférés et ayez toujours quelque chose
+                        à regarder
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!--Section 3-->
+        <section>
+            <!--Section Left-->
+            <div class="section_left">
+                <!-- Section avec un titre et du texte-->
+                <div class="section_text">
+                    <h1>Où que vous soyez.</h1>
+                    <p>
+                        Regardez des films et séries en accès illimité sur votre TV
+                        smartphone, tablette et ordinateur, tout compris
+                    </p>
+                </div>
+            </div>
+            <!--Section Right-->
+            <div class="section_right">
+                <!--Même principe que la section 1-->
+                <div class="animation_netflix_imac">
+                    <div class="animation-imac">
+                        <video class="imac-video" alt="Vidéo stanger things" autoplay="" playsinline="" muted="" loop="">
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                                    type=" video/mp4" />
+                        </video>
+                    </div>
+                    <img src="img/device-pile.png" class="picture-imac" alt="épisode stanger things" />
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!--Section 4-->
+        <section>
+            <!--Section Left-->
+            <div class="section_left">
+                <!--Affichage d'une image-->
+                <div class="section_img_children">
+                    <img src="img/enfants.png" alt="image avec des enfants" class="children-picture" />
+                </div>
+            </div>
+            <!--Section Right-->
+            <div class="section_right">
+                <!-- Section avec un titre et du texte-->
+                <div class="section_text">
+                    <h1>Créez des profils pour les enfants.</h1>
+                    <p>
+                        Les enfants découvrent de nouvelles aventures et retrouvent leur
+                        personnages préférés dans un espace bien à eux, déjà inclus dan
+                        votre abonnement
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!--Section questions utilisation de js dans script.js pour afficher la div quand on clique sur la croix-->
+        <section class="question">
+            <h2>Foire aux questions</h2>
+            <div class="question_main">
+                <div class="question_title">
+                    <p>Que puis-je regarder sur Netflix</p>
+                    <!--création d'une croix pour faire apparaitre la réponse en dessous-->
+                    <div class="question_title_switch">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--div qui sera en display none-->
+                <div class="question_answer">
+                    <p>
+                        Netflix propose un vaste catalogue comprenant notamment de
+                        longs-métrages, des documentaires, des séries, des animes et de
+                        programmes originaux Netflix primés. Regardez Netflix à volonté
+                        quand vous le voulez
+                    </p>
+                </div>
+            </div>
+            <div class="question_main">
+                <div class="question_title">
+                    <p>Netflix, qu'est ce que c'est</p>
+                    <!--création d'une croix pour faire apparaitre la réponse en dessous-->
+                    <div class="question_title_switch">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--div qui sera en display none-->
+                <div class="question_answer">
+                    <p>
+                        Netflix est un service de streaming qui propose une vast sélection
+                        de séries, films, animes, documentaires et autre programmes primés
+                        sur des milliers d'appareils connectés Internet
+                        <br />
+                        Regardez tout ce que vous voulez, quand vous voulez, sans
+                        publicité et à un tarif mensuel très attractif. Découvrez de
+                        nouveaux films et séries chaque semaine, il y en a pour tous les
+                        goûts
+                    </p>
+                </div>
+            </div>
+            <div class="question_main">
+                <div class="question_title">
+                    <p>Combien coûte Netflix?</p>
+                    <!--création d'une croix pour faire apparaitre la réponse en dessous-->
+                    <div class="question_title_switch">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--div qui sera en display none-->
+                <div class="question_answer">
+                    <p>
+                        Regardez Netflix sur votre smartphone, tablette, Smart TV
+                        ordinateur ou appareil de streaming, le tout pour un tarif mensuel
+                        fixe. Les forfaits vont de 8,99 € à 17,99 € par mois. Pas de
+                        contrat ni de frais supplémentaires
+                    </p>
+                </div>
+            </div>
+            <div class="question_main">
+                <div class="question_title">
+                    <p>Où puis-je regarder Netflix ?</p>
+                    <!--création d'une croix pour faire apparaitre la réponse en dessous-->
+                    <div class="question_title_switch">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--div qui sera en display none-->
+                <div class="question_answer">
+                    <p>
+                        Netflix, c'est où vous voulez, quand vous voulez. Connectez-vous
+                        votre compte pour regarder Netflix en ligne sur netflix.com depuis
+                        votre ordinateur ou tout appareil connecté à Internet avec
+                        l'application Netflix, comme les Smart TV, smartphones, tablettes
+                        lecteurs de streaming et consoles de jeu. Vous pouvez aussi
+                        télécharger vos séries préférées avec l'application iOS, Android
+                        ou Windows 10. Téléchargez des titres pour les regarder sur votre
+                        appareil mobile, même sans connexion Internet. Emportez Netflix
+                        partout avec vous
+                    </p>
+                </div>
+            </div>
+            <div class="question_main">
+                <div class="question_title">
+                    <p>Comment puis-je annuler mon forfait ?</p>
+                    <!--création d'une croix pour faire apparaitre la réponse en dessous-->
+                    <div class="question_title_switch">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--div qui sera en display none-->
+                <div class="question_answer">
+                    <p>
+                        Netflix offre une grande souplesse. Pas de contrat compliqué. Sans
+                        engagement. Deux clics suffisent pour annuler votre compte et
+                        ligne. Pas de frais d'annulation : ouvrez ou fermez votre compte
+                        tout moment
+                    </p>
+                </div>
+            </div>
+            <div class="question_main">
+                <div class="question_title">
+                    <p>Est-ce que Netflix est adapté aux enfants ?</p>
+                    <!--création d'une croix pour faire apparaitre la réponse en dessous-->
+                    <div class="question_title_switch">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--div qui sera en display none-->
+                <div class="question_answer">
+                    <p>
+                        Netflix Jeunesse est inclus dans votre abonnement et offre un
+                        meilleur contrôle aux parents, ainsi qu'un espace dédié aux
+                        enfants, avec des films et des séries destinés à toute la famille
+                        Les profils Jeunesse comportent des fonctionnalités de contrôle
+                        parental avec code PIN permettant de modifier la catégorie d'âge
+                        des contenus que vos enfants peuvent regarder et de bloquer des
+                        titres spécifiques
+                    </p>
+                </div>
+            </div>
+            <p class="text-question">
+                Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous
+                abonner ou réactiver votre abonnement
+            </p>
+            <!--Utilisation du même formulaire que dans le header pour récupérer l'adresse mail et aller à l'inscription-->
+            <div class="header_email-information">
+                <a asp-page="/step" class="header_start">Commencer</a>
+            </div>
+        </section>
+    </main>
+    <hr />
+    <footer>
+        <span>Netflox - Geoff Mnr - 2023</span>
+    </footer>
+    <!--lien vers script pour l'affichage des div's dans la section 5-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+

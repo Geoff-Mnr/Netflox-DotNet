@@ -1,0 +1,70 @@
+﻿@page
+@using Netflox.Models;
+@model MovieDescriptionModel
+@{
+    ViewData["Title"] = "Movie Description";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/main_movie.css">
+</head>
+<!--Fiche de film, je n'ai mis des com's que sur sur cette page car elles sont toutes identiques-->
+
+<body>
+    <main>
+    <!--Utilisation d'un container pour mettre l'image ainsi que le texte de chaques films-->
+    <div class="movie">
+        <!-- Contenu du film (acteurs, réalisateurs, durée, recomandation, sinopsis,...)-->
+        <div class="movie_information">
+            <div class="header-movie">
+            <img src="@Model.Movie.ImageUrl" alt="" loading="lazy">
+            <div class="movie_description">
+                <div class="movie_characteristics">
+                    <h1>@Model.Movie.NameMovie</h1>
+                    <span class="recommandation">Recommandé à @Model.Movie.Recommendation %</span>
+                    <p class="p_movie_dur"><span class="movie_duration">Durée : @Model.Movie.Time</span></p>
+                        <p><span class="grey_text">Genre</span> : @Model.Movie.Genre</p>
+                    <p><span class="grey_text">Par</span> @Model.Movie.Director</p>
+                    <p><span class="grey_text">Avec</span> @Model.Movie.Actor</p>        
+                </div>
+                </div>
+             </div>
+            <div class="movie_synopsys">
+                <h1>Synopsis</h1>
+                <p>@Model.Movie.Synopsis</p>
+            </div>
+         </div>
+    </div>
+
+       
+   
+        
+
+
+
+
+
+
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+

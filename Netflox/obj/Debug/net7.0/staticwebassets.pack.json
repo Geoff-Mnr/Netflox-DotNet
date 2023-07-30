@@ -1,0 +1,481 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\logout.css",
+      "PackagePath": "staticwebassets\\css\\logout.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\main\\main_style.css",
+      "PackagePath": "staticwebassets\\css\\main\\main_style.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\main_movie.css",
+      "PackagePath": "staticwebassets\\css\\main_movie.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\step\\inputs.css",
+      "PackagePath": "staticwebassets\\css\\step\\inputs.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\step\\steps.css",
+      "PackagePath": "staticwebassets\\css\\step\\steps.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\step\\steps_button.css",
+      "PackagePath": "staticwebassets\\css\\step\\steps_button.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\step\\steps_main.css",
+      "PackagePath": "staticwebassets\\css\\step\\steps_main.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\agents-presque.webp",
+      "PackagePath": "staticwebassets\\img\\agents-presque.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\all.png",
+      "PackagePath": "staticwebassets\\img\\all.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\arretes-moi.webp",
+      "PackagePath": "staticwebassets\\img\\arretes-moi.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\background.jpg",
+      "PackagePath": "staticwebassets\\img\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\boxshot.png",
+      "PackagePath": "staticwebassets\\img\\boxshot.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\bumblebee.webp",
+      "PackagePath": "staticwebassets\\img\\bumblebee.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\check-mark.png",
+      "PackagePath": "staticwebassets\\img\\check-mark.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\checkmark.png",
+      "PackagePath": "staticwebassets\\img\\checkmark.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\chicken.png",
+      "PackagePath": "staticwebassets\\img\\chicken.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\children.png",
+      "PackagePath": "staticwebassets\\img\\children.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\clifford.webp",
+      "PackagePath": "staticwebassets\\img\\clifford.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\coach-carter.webp",
+      "PackagePath": "staticwebassets\\img\\coach-carter.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\copain-pour-toujours.webp",
+      "PackagePath": "staticwebassets\\img\\copain-pour-toujours.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\creed.webp",
+      "PackagePath": "staticwebassets\\img\\creed.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\default.png",
+      "PackagePath": "staticwebassets\\img\\default.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\device-pile.png",
+      "PackagePath": "staticwebassets\\img\\device-pile.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\device.png",
+      "PackagePath": "staticwebassets\\img\\device.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\dirty-grandpa.webp",
+      "PackagePath": "staticwebassets\\img\\dirty-grandpa.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\django.webp",
+      "PackagePath": "staticwebassets\\img\\django.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\dog.png",
+      "PackagePath": "staticwebassets\\img\\dog.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\dontbreathe.webp",
+      "PackagePath": "staticwebassets\\img\\dontbreathe.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\download-icon.gif",
+      "PackagePath": "staticwebassets\\img\\download-icon.gif"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\eighteen_years.png",
+      "PackagePath": "staticwebassets\\img\\eighteen_years.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\enfants.png",
+      "PackagePath": "staticwebassets\\img\\enfants.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\favicon_netflox.png",
+      "PackagePath": "staticwebassets\\img\\favicon_netflox.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\fourteen_years.png",
+      "PackagePath": "staticwebassets\\img\\fourteen_years.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\hero.png",
+      "PackagePath": "staticwebassets\\img\\hero.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\icones\\profil-1.png",
+      "PackagePath": "staticwebassets\\img\\icones\\profil-1.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\icones\\profil-2.png",
+      "PackagePath": "staticwebassets\\img\\icones\\profil-2.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\icones\\profil-3.png",
+      "PackagePath": "staticwebassets\\img\\icones\\profil-3.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\icones\\profil-4.png",
+      "PackagePath": "staticwebassets\\img\\icones\\profil-4.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\icones\\profil-5.png",
+      "PackagePath": "staticwebassets\\img\\icones\\profil-5.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\icones\\profil-6.png",
+      "PackagePath": "staticwebassets\\img\\icones\\profil-6.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\icones\\profil-7.png",
+      "PackagePath": "staticwebassets\\img\\icones\\profil-7.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\interstellar.webp",
+      "PackagePath": "staticwebassets\\img\\interstellar.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\john-wick.webp",
+      "PackagePath": "staticwebassets\\img\\john-wick.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\joker.webp",
+      "PackagePath": "staticwebassets\\img\\joker.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\jurassic-park.webp",
+      "PackagePath": "staticwebassets\\img\\jurassic-park.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\la-fleche-droite.png",
+      "PackagePath": "staticwebassets\\img\\la-fleche-droite.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\la-fleche-grey.png",
+      "PackagePath": "staticwebassets\\img\\la-fleche-grey.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\la-fleche.png",
+      "PackagePath": "staticwebassets\\img\\la-fleche.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\langue-White.png",
+      "PackagePath": "staticwebassets\\img\\langue-White.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\langue-grey.png",
+      "PackagePath": "staticwebassets\\img\\langue-grey.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\langue.png",
+      "PackagePath": "staticwebassets\\img\\langue.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\legend.webp",
+      "PackagePath": "staticwebassets\\img\\legend.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\logo.webp",
+      "PackagePath": "staticwebassets\\img\\logo.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\loup_de_Wall_Street.webp",
+      "PackagePath": "staticwebassets\\img\\loup_de_Wall_Street.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\minions.webp",
+      "PackagePath": "staticwebassets\\img\\minions.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\monster.png",
+      "PackagePath": "staticwebassets\\img\\monster.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\murder-mystery2.jpg",
+      "PackagePath": "staticwebassets\\img\\murder-mystery2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\nope.webp",
+      "PackagePath": "staticwebassets\\img\\nope.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\penguin.png",
+      "PackagePath": "staticwebassets\\img\\penguin.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\picture-section-2-bis.jpg",
+      "PackagePath": "staticwebassets\\img\\picture-section-2-bis.jpg"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\picture-section-2.jpg",
+      "PackagePath": "staticwebassets\\img\\picture-section-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\picture-section2.jpg",
+      "PackagePath": "staticwebassets\\img\\picture-section2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\robot.png",
+      "PackagePath": "staticwebassets\\img\\robot.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\sos-fantome.webp",
+      "PackagePath": "staticwebassets\\img\\sos-fantome.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\spider-man.webp",
+      "PackagePath": "staticwebassets\\img\\spider-man.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\spider-man_desc_movies.webp",
+      "PackagePath": "staticwebassets\\img\\spider-man_desc_movies.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\tv.png",
+      "PackagePath": "staticwebassets\\img\\tv.png"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\uncharted.webp",
+      "PackagePath": "staticwebassets\\img\\uncharted.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\venom.webp",
+      "PackagePath": "staticwebassets\\img\\venom.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\img\\very.webp",
+      "PackagePath": "staticwebassets\\img\\very.webp"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\js\\main_header.js",
+      "PackagePath": "staticwebassets\\js\\main_header.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\geoff\\Desktop\\LPB - Projet\\Netflox\\wwwroot\\video\\spider-man.mov",
+      "PackagePath": "staticwebassets\\video\\spider-man.mov"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Netflox.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Netflox.props",
+      "PackagePath": "build\\Netflox.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Netflox.props",
+      "PackagePath": "buildMultiTargeting\\Netflox.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Netflox.props",
+      "PackagePath": "buildTransitive\\Netflox.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,133 @@
+﻿@page
+@model Netflox.Pages.Admin.Admin_Gestion.Films.IndexModel
+
+@{
+    ViewData["Title"] = "Administration des films";
+    Layout = "";
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Netflox</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/img/logo.webp" class="logo_layout"></a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+<h1>Administration des films</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-id">Créer un film</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                Nom
+            </th>
+            <th>
+                Genre
+            </th>
+            <th>
+                Recommendation
+            </th>
+            <th>
+                Durée
+            </th>
+            <th>
+                Réalisateur
+            </th>
+            <th>
+                Acteurs
+            </th>
+            <th>
+                Synopsis
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Movie) {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.NameMovie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Recommendation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Director)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actor)
+            </td>
+            <td>
+                    @{
+                        string synopsis = item.Synopsis;
+                        if (synopsis.Length > 50)
+                        {
+                            synopsis = synopsis.Substring(0, 50) + "...";
+                        }
+                    }
+                    @Html.DisplayFor(modelItem => synopsis)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.MovieID">Editer</a> |
+                <a asp-page="./Details" asp-route-id="@item.MovieID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.MovieID">Supprimer</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+        <a asp-page="/Admin/index" class="btn btn-dark">Retour</a>
+</div>
+    <footer class="border-top  text-muted mt-5">
+        <div class="container">
+            &copy; 2023 - Netflox
+
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+.btn-id {
+
+    color: #f3f3f3;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #fd0000;
+
+}
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>

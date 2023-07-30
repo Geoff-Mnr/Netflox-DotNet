@@ -1,0 +1,131 @@
+@import url(bg_movie.css);
+
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+/*Fiche pour le film (container)*/
+.movie {
+  width:1000px;
+  background-color: #141414;
+  border-radius: 5px;
+}
+
+.header-movie{
+    display:flex;
+   
+
+}
+
+.movie_description{
+    display:flex;
+    width:50%;
+    justify-content:center;
+    
+}
+
+img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.movie_characteristics {
+  width: 50%;
+}
+
+h1{
+    font-size:1.75rem;
+}
+
+/*éléments avec les infos du film sur une ligne*/
+span.recommandation {
+  font-weight: 600;
+  color: #46d369;
+}
+
+img.movie_year {
+  width: 40px;
+  height: 40px;
+  padding: 0.5em;
+}
+
+span.movie_quality {
+  padding: 0.5em;
+  border: 1px solid #f3f3f3;
+}
+
+span.grey_text {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.p_movie_dur {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+p .movie_duration {
+    font-size: 1.25em;
+}
+
+.movie_description {
+    display: flex;
+}
+
+.movie_description p {
+  font-size: 0.75em;
+  font-weight: 100;
+}
+
+.movie_information {
+  padding: 2em 1em 2em 1em;
+}
+
+
+.movie_synopsys{
+    padding-top:2rem;
+}
+.movie_synopsys h1 {
+    font-weight: 600;
+}
+
+.movie_synopsys p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+.button-return {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    background: #fd0000;
+    border-radius: 2px;
+    border: 0;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}

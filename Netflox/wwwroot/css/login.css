@@ -1,0 +1,112 @@
+﻿::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*même principe que la page index.html sauf que je l'ai utilisé pour tout le body*/
+body {
+    position: relative;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: #f3f3f3;
+    font-family: "Montserrat", sans-serif;
+}
+
+    body:before {
+        content: "";
+        height: 100vh;
+        background-image: url(/img/background.jpg);
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+/*header qui fait 100% avec le logo Netflox*/
+header {
+    width: 100%;
+    padding:2rem;
+}
+
+header .logo_netflox {
+    width: 200px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    height: 100vh;
+}
+
+.login_formulaire {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    width: 350px;
+    height: 400px;
+    padding: 4em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*input mail*/
+.input {
+    margin-top: 1em;
+    width: 350px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 1em;
+    color: #7e6868;
+}
+
+/*input pour envoyer*/
+#login-submit {
+    margin-top: 2em;
+    width: 350px;
+    height: 55px;
+    border-radius: 5px;
+    background: #fd0000;
+    color: #f3f3f3;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+/*input checkbox*/
+.form-label {
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.remember_me_login span {
+    font-size: 1em;
+    padding-left: 0.5em;
+}
+

@@ -1,0 +1,54 @@
+﻿@page
+@model Netflox.Pages.ProfilesModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflox | Profils</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../images/favicon_netflox.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+</head>
+
+<body>
+    <main>
+        <h1>Qui suis-je ?</h1>
+        
+        <ul class="profile_selection">
+            @foreach (var profile in Model.Profiles)
+            {
+                <li>
+                    <a asp-page="/Movies" asp-route-id="@profile.ProfilID">
+                        <img src="@profile.ProfileImage" alt="profil 1" />
+                        <span>@profile.FirstName</span>
+                    </a>
+                </li>
+            }
+
+          
+            
+        </ul>
+        @if (Model.Profiles.Count < 5)
+        {
+
+            <a asp-page="/Create-Profiles">
+                <i class="bi bi-plus-square btn-custom"></i>
+            </a>
+
+        }
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+﻿@page
+@model Netflox.Pages.Admin.Admin_Gestion.Films.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<h1>Modifier votre film</h1>
+
+<h4>@Html.DisplayFor(model => model.Movie.NameMovie)</h4>
+<hr />
+<div class="row mb-5">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Movie.MovieID" />
+            <div class="form-group">
+                <label asp-for="Movie.ImageUrl" class="control-label">Url de l'image</label>
+                <input asp-for="Movie.ImageUrl" class="form-control" />
+                <span asp-validation-for="Movie.ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.NameMovie" class="control-label">Nom</label>
+                <input asp-for="Movie.NameMovie" class="form-control" />
+                <span asp-validation-for="Movie.NameMovie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Genre" class="control-label">Genre</label>
+                <input asp-for="Movie.Genre" class="form-control" />
+                <span asp-validation-for="Movie.Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Recommendation" class="control-label">Recommendation</label>
+                <input asp-for="Movie.Recommendation" class="form-control" />
+                <span asp-validation-for="Movie.Recommendation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Time" class="control-label">Durée</label>
+                <input asp-for="Movie.Time" class="form-control" />
+                <span asp-validation-for="Movie.Time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Director" class="control-label">Réalisateur</label>
+                <input asp-for="Movie.Director" class="form-control" />
+                <span asp-validation-for="Movie.Director" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Actor" class="control-label">Acteur</label>
+                <input asp-for="Movie.Actor" class="form-control" />
+                <span asp-validation-for="Movie.Actor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Synopsis" class="control-label">Synopsis</label>
+                <input asp-for="Movie.Synopsis" class="form-control" />
+                <span asp-validation-for="Movie.Synopsis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sauvegarder" class="btn btn-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Retour</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

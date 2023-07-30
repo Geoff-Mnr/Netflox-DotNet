@@ -1,0 +1,164 @@
+﻿@page 
+@using Netflox.Models;
+@using Netflox.Pages.Admin.Profils;
+@model Netflox.Pages.MoviesModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/main/main_style.css">
+    <script src="/js/main_header.js"></script>
+    <title>Netflox</title>
+</head>
+
+<body>
+    <!--Page principale avec les différents films-->
+    <header  id="Accueil">
+        <!--Header avec une navbar et une video (utilisation de js pour changer la couleur de la navbar au scroll )-->
+        <nav class="col-12 d-flex align-items-center justify-content-lg-between">
+            <!--Container pour avoir à gauche le logo et le menu-->
+            <div class="menu">
+                <a asp-page="/"><img src="./img/logo.webp" alt="logo" class="header_main_img_logo"></a>
+                <ul>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Séries">Séries</a></li>
+                    <li><a href="#Films">Films</a></li>
+                    <li><a href="#News">Nouvautés</a></li>
+                </ul>
+            </div>
+            <!--Container pour pour pouvoit placer l'image à droite dans la navbar-->
+            <div class="profile">
+                <a asp-page="/Profiles">
+                    <img src="@Model.ProfileImg" class="profil_img" loading="lazy" alt="" />
+                </a>
+                
+                @{
+                    if (User.IsInRole("Admin"))
+                    {
+                        <a asp-page="Admin/Index" class="admin-button btn ">Zone Admin</a>
+                    }
+                }
+                
+            </div>
+
+        </nav>
+        <!--Video qui tourne en boucle-->
+        <video autoplay="" playsinline="" muted="" loop="">
+            <source src="../video/spider-man.mov" type="video/mp4">
+        </video>
+    </header>
+
+    <main>
+        <div class="movies">
+                        <h1 id="News">Nouveautés</h1>
+                        <!--Liens avec les films img vers une page html-->
+                        <ul>
+                            <li>
+                                @foreach (var movie in Model.Movie.Where(m => m.Genre == "Nouveauté").Take(5))
+                                {
+                                    <a asp-page="MovieDescription" asp-route-id="@movie.MovieID" asp-route-description="@movie">
+                                        <img src="@movie.ImageUrl" alt="" loading="lazy">
+                                        <h2>@movie.NameMovie</h2>
+                                    </a>
+                                }
+                            </li>
+                           
+                           
+                        </ul>
+        </div>
+
+        <div class="movies">
+            <h1 id="Films">Comédie</h1>
+            <!--Liens avec les films img vers une page html-->
+            <ul>
+                <li>
+                    @foreach (var movie in Model.Movie.Where(m => m.Genre == "Comédie").Take(5))
+                    {
+                        <a asp-page="MovieDescription" asp-route-id="@movie.MovieID" asp-route-description="@movie">
+                            <img src="@movie.ImageUrl" alt="" loading="lazy">
+                            <h2>@movie.NameMovie</h2>
+                        </a>
+                    }
+                </li>
+            </ul>
+        </div>
+
+        <div class="movies">
+            <h1 id="Films">Drame</h1>
+            <!--Liens avec les films img vers une page html-->
+            <ul>
+                <li>
+                  
+                    @foreach (var movie in Model.Movie.Where(m => m.Genre == "Drame").Take(5))
+                    {
+                        <a asp-page="MovieDescription" asp-route-id="@movie.MovieID" asp-route-description="@movie">
+                            <img src="@movie.ImageUrl" alt="" loading="lazy">
+                            <h2>@movie.NameMovie</h2>
+                        </a>
+                    }
+                   
+
+
+                    
+                </li>
+
+            </ul>
+        </div>
+        <div class="movies">
+            <h1 id="Films">Science-Fiction</h1>
+            <!--Liens avec les films img vers une page html-->
+            <ul>
+                <li>
+                    @foreach (var movie in Model.Movie.Where(m => m.Genre == "Science-Fiction").Take(5))
+                    {
+                        <a asp-page="MovieDescription" asp-route-id="@movie.MovieID" asp-route-description="@movie">
+                            <img src="@movie.ImageUrl" alt="" loading="lazy">
+                            <h2>@movie.NameMovie</h2>
+                        </a>
+                    }
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="d-flex justify-content-between p-5">
+        <span>Netflox - Geoff Mnr - 2023</span>
+        @{
+            if (User.Identity?.IsAuthenticated ?? false)
+            {
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                    <button type="submit" class="btn admin-button">Se deconnecter</button>
+                </form>
+            }
+            else
+            {
+                <p>You have successfully logged out of the application.</p>
+            }
+        }
+        
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+﻿@page
+@model Netflox.Pages.Admin.Admin_Gestion.Films.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Supprimez votre film</h1>
+<div>
+    <h4>@Html.DisplayFor(model => model.Movie.NameMovie)</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie.ImageUrl)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.ImageUrl)
+        </dd>
+        <dt class="col-sm-2">
+            Nom
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.NameMovie)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie.Genre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Genre)
+        </dd>
+        <dt class="col-sm-2">
+            Recommandation
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Recommendation)
+        </dd>
+        <dt class="col-sm-2">
+            Durée
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Time)
+        </dd>
+        <dt class="col-sm-2">
+            Réalisateur
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Director)
+        </dd>
+        <dt class="col-sm-2">
+            Acteur
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Actor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie.Synopsis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Synopsis)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Movie.MovieID" />
+        <input type="submit" value="Delete" class="btn btn-id" /> |
+        <a asp-page="./Index">Retour</a>
+    </form>
+</div>
+
+
+<style>
+    .btn-id {
+        color: #f3f3f3;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        background: #fd0000;
+    }
+</style>

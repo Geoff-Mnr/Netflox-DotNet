@@ -1,0 +1,60 @@
+﻿@page
+@model Netflox.Pages.Admin.Profils.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Administration des profils</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-id mt-5">Créer un nouveau profil</a>
+</p>
+<table class="table mt-2">
+    <thead>
+        <tr>
+            <th>
+                Prénom
+            </th>
+            <th>
+                Image du profil
+            </th>
+            <th>
+                Utilisateur
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Profiles) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfileImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MainUsers.UserName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ProfilID">Editer</a> |
+                <a asp-page="./Details" asp-route-id="@item.ProfilID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ProfilID">Supprimer</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<a asp-page="/Admin/index" class="btn btn-dark">Retour</a>
+
+<style>
+    .btn-id {
+        color: #f3f3f3;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        background: #fd0000;
+    }
+</style>

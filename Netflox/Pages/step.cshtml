@@ -1,0 +1,59 @@
+﻿@page
+
+@model Netflox.Pages.stepModel
+@{
+    ViewData["Title"] = "Step";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Netflox</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="/css/step/steps_main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/img/logo.webp" class="logo_layout"></a>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+    <main>
+
+        <div class="d-flex justify-content-center align-items-center flex-column ">
+    <img src="img/Device.png" alt="Tv_Ordinateur_tablette_smartphone" class="device_steps">
+    <div class="steps_text">
+        <h1>Complétez la configuration de votre compte.</h1>
+        <h2 class="text-center">
+            Netflix est personnalisé selon vos goûts. Créez un mot de passe pour regarder Netflix quand vous
+            voulez,
+            où vous voulez.
+        </h2>
+    </div>
+    <a asp-page="/Account/Register" asp-area="Identity" class="button">S'enregistrer</a>
+</div>
+    </main>
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2023 - Netflox
+
+    </div>
+</footer>
+</body>
+</html>
+
+

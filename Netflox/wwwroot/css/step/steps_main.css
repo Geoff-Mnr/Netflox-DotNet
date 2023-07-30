@@ -1,0 +1,41 @@
+/*css principal pour toutes les étapes + import des différents éléments des pages*/
+
+
+@import url(steps.css);
+@import url(inputs.css);
+@import url(steps_button.css);
+
+
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.device_steps {
+    margin-bottom: 3em;
+    width: 350px;
+    height: 100px;
+}
+
+html, body {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height:75vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

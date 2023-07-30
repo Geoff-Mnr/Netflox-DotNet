@@ -1,0 +1,49 @@
+﻿@page
+@model Netflox.Pages.Admin.Profils.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Supprimer le profil</h1>
+<div>
+    <h4>@Html.DisplayFor(model => model.Profiles.FirstName)</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Prénom
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Profiles.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            Image du profil
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Profiles.ProfileImage)
+        </dd>
+        <dt class="col-sm-2">
+            Utilisateur
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Profiles.MainUsers.UserName)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Profiles.ProfilID" />
+        <input type="submit" value="Delete" class="btn btn-id" /> |
+        <a asp-page="./Index">Retour</a>
+    </form>
+</div>
+
+
+<style>
+    .btn-id {
+        color: #f3f3f3;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        background: #fd0000;
+    }
+</style>

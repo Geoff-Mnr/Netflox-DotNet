@@ -1,0 +1,66 @@
+﻿@page
+@model Netflox.Pages.Admin.Admin_Gestion.Films.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Details</h1>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Movie.NameMovie)</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Url de l'image
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.ImageUrl)
+        </dd>
+        <dt class="col-sm-2">
+            Nom
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.NameMovie)
+        </dd>
+        <dt class="col-sm-2">
+            Genre
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Genre)
+        </dd>
+        <dt class="col-sm-2">
+            Recommendation
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Recommendation)
+        </dd>
+        <dt class="col-sm-2">
+            Durée
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Time)
+        </dd>
+        <dt class="col-sm-2">
+            réalisateur
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Director)
+        </dd>
+        <dt class="col-sm-2">
+            Acteur
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Actor)
+        </dd>
+        <dt class="col-sm-2">
+            Synopsis
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Synopsis)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Movie.MovieID" class="btn btn-dark">Editer</a> |
+    <a asp-page="./Index">Retour</a>
+</div>
